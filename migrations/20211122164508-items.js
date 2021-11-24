@@ -10,11 +10,15 @@ module.exports = {
         primaryKey: true
       },
       name: {
-        type: Sequelize.STRING(150),
+        type: Sequelize.STRING(1234),
         allowNull: false
       },
       description: {
-        type: Sequelize.STRING(255),
+        type: Sequelize.STRING(1234),
+        allowNull: false
+      },
+      subdescription: {
+        type: Sequelize.STRING(1234),
         allowNull: false
       },
       price: {
@@ -22,11 +26,11 @@ module.exports = {
         allowNull: false
       },
       image_url: {
-        type: Sequelize.STRING(255),
+        type: Sequelize.STRING(1234),
         allowNull: false
       },
       type: {
-        type: Sequelize.STRING(255),
+        type: Sequelize.STRING(1234),
         allowNull: false
       },
       createdAt: {

@@ -9,7 +9,6 @@ router.get('/', indexController.welcome);
 router.get('/stores', storeController.findAll);
 router.get('/story/:id', storeController.findOne);
 
-router.get('/items', itemController.findAll);
 router.get('/item/:id', itemController.findOne);
 
 module.exports = router;
