@@ -3,11 +3,7 @@ const Store = require("../models/Store");
 
 exports.findAll = async (req, res) => {
   try {
-    let data = await Store.findAll({
-      include: [{
-        model: Item,
-      }]
-    });
+    let data = await Store.findAll();
 
     return res.status(200).json({ data });
   } catch (err) {

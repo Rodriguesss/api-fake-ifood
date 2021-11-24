@@ -10,7 +10,7 @@ module.exports = {
         primaryKey: true
       },
       name: {
-        type: Sequelize.STRING(150),
+        type: Sequelize.STRING(1234),
         allowNull: false
       },
       grade: {
@@ -18,7 +18,7 @@ module.exports = {
         allowNull: false
       },
       segment: {
-        type: Sequelize.STRING(50),
+        type: Sequelize.STRING(1234),
         allowNull: false
       },
       distance: {
@@ -26,7 +26,7 @@ module.exports = {
         allowNull: false
       },
       delivery_time: {
-        type: Sequelize.STRING(12),
+        type: Sequelize.STRING(1234),
         allowNull: false
       },
       delivery_price: {
@@ -34,16 +34,27 @@ module.exports = {
         allowNull: false
       },
       image_url: {
-        type: Sequelize.STRING(255),
+        type: Sequelize.STRING(1234),
         allowNull: false
+      },
+      famous: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+      },
+      champion: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+      },
+      meal_ticket: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
       },
       open: {
         type: Sequelize.BOOLEAN,
         allowNull: false,
-        defaultValue: true
       },
       banner_image: {
-        type: Sequelize.STRING(255),
+        type: Sequelize.STRING(1234),
         allowNull: false
       },
       createdAt: {
